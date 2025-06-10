@@ -107,66 +107,53 @@ main {
 }
 
 #principal {
-    margin: 30px 60px;
+    margin: 30px 100px;
 }
 
 #imagens {
     text-align: center;
 }
 
-#principalc {
-    width: 600px;
-    float: left;
-}
-
-#tudoc {
-    width: auto;
-    margin: 60px;
-    background-color: #FFF;
-    height: auto;
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
 .video {
-    width: 800px;
+    width: 40%;
+    position: relative;
+    height: 500px;
+    padding
+    border: 1px solid #222;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+aside {
     float: right;
-    margin: 30px 50px 100px 0;
-    border: 1px solid #222222;
-    padding: 2px
-}
-
-.textcult {
-    margin: 10px 0 30px 50px;
-    width: 750px;
-}
-
-.textpratos {
-    width: 50%;
-    float: left;
-    padding:30px;
-    margin-right: 50px;
-}
-
-#titulopratos{
-    margin:30px;
-    clear:both;
-}
-aside{
-    float:right;
     width: 45%;
 }
+
 main h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     padding: 10px;
-    text-decoration: underline;
+    color: #d84045;
 }
 
+main hr{
+    background-color: #d84045;
+    width: auto;
+    height: 2px;
+    margin: 15px 0;
+}
 main h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
     padding: 10px;
+    color:#d84045
 }
 
 main img {
@@ -175,26 +162,100 @@ main img {
     border-radius: 30px;
     border: 13px groove #9c9c94;
 }
+
 aside img {
     margin: 60px;
     padding: 2px;
     border-radius: 30px;
     border: 13px groove #9c9c94;
 }
+
 main p {
-    padding: 5px
+    padding: 10px
+}
+
+/* Cultura */
+
+#principalc {
+    flex: 1 1 600px;
+    margin-right: 20px;
+}
+
+#tudoc {
+    width: auto;
+    margin: 30px;
+    background-color: #FFF;
+    height: auto;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#tudoc main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: #FFF;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#tudoc hr{
+    width: 90%;
+}
+
+.textcult {
+    margin: 10px 0 30px 20px;
+    width: 750px;
+}
+
+/* Pratos Típicos */
+
+.textpratos {
+    width: 50%;
+    float: left;
+    padding: 30px;
+    margin-right: 50px;
+}
+
+#titulopratos {
+    margin: 30px;
+    clear: both;
 }
 
 /*Tabela*/
 
-#tabelahist{
+#tabelahist {
     width: 1200px;
-    margin:auto;
+    margin: auto;
 }
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabela th {
+    background-color: #AD1519;
+    text-align: left;
+}
+
 .Foco {
     font-weight: bold;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+caption {
+    margin: 20px;
+    text-decoration: underline;
+    font-size:
 }
 
 table {
