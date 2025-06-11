@@ -4,7 +4,7 @@
 }
 
 header {
-    background-color: #FABD00;
+    background-color: #fabd00;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
 header h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 55px;
-    color: #FFF;
+    color: #292929;
     letter-spacing: 3px;
     padding-top: 40px;
     text-align: center;
@@ -35,60 +35,42 @@ header img {
 
 header h2 {
     font-style: italic;
-    color: #FFF;
+    color: #292929;
     padding-top: 10px;
     text-transform: capitalize;
 }
 
 /* menu */
 
-a {
-    text-decoration: none;
-    color: #222222;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #FABD00
-}
-
 nav {
-    background-color: #AD1519;
+    background-color: #ad1519;
+    padding: 10px 0;
 }
 
-.menu {
-    width: 1500px;
-    height: 50px;
+.menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
     padding: 10px;
-    margin: auto;
+    margin: 0;
+    list-style: none;
 }
 
-nav ul {
-    list-style-type: none;
-    text-transform: uppercase;
+.menu ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ad1519;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-nav ul li {
-    float: left;
-    background-color: #AD1519;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 20px;
-    width: 232px;
-    display: block;
-    text-align: center;
-    padding: 12px 4px 12px 4px;
-    color: #FFF;
-    transition: all .4s;
-    border-left: 1px solid #CCC;
-    border-right: 1px solid #CCC;
-}
-
-nav ul li a:hover {
-    color: #FABD00;
-    text-shadow: 1px 1px 2px #CCC;
+.menu ul li a:hover {
+    background-color: #fabd00;
+    color: #000;
+    transform: scale(1.05);
+    text-shadow: none;
 }
 
 /* Main */
@@ -107,7 +89,7 @@ main {
 }
 
 #principal {
-    margin: 30px 100px;
+    margin: 30px 15%;
 }
 
 #imagens {
@@ -118,7 +100,6 @@ main {
     width: 40%;
     position: relative;
     height: 500px;
-    padding
     border: 1px solid #222;
 }
 
